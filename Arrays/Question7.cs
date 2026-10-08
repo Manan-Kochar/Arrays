@@ -1,10 +1,10 @@
 ﻿//using System;
 //using System.Collections.Generic;
 //using System.Text;
-//// enter 10 elements in an array and print array after sorting it in assending order
+//// checking how many occourance of a number in an array
 //namespace Arrays
 //{
-//    internal class Question6
+//    internal class Question7
 //    {
 //        static void Main(string[] args)
 //        {
@@ -14,12 +14,17 @@
 //                Console.WriteLine($"Enter the value for element {i + 1}:");
 //                a[i] = Convert.ToInt32(Console.ReadLine());
 //            }
-//            Array.Sort(a);
-//            Console.WriteLine("The array elements in ascending order are:");
+//            Console.WriteLine("Enter the number to check its occurrence:");
+//            int num = Convert.ToInt32(Console.ReadLine());
+//            int count = 0;
 //            for (int i = 0; i < a.Length; i++)
 //            {
-//                Console.WriteLine($"{a[i]}");
+//                if (a[i] == num)
+//                {
+//                    count++;
+//                }
 //            }
+//            Console.WriteLine($"The number {num} occurs {count} times in the array.");
 //        }
 //    }
 //}
